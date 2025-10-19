@@ -1,0 +1,225 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --text-color: #fff;
+  --bg-dark: #1c1c1c;
+  --btn-bg: #ff6565;
+  --font-main: 'Arial', sans-serif;
+}
+
+/* BODY */
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--bg-dark);
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* HERO BACKGROUND */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/headphones_hero_1.jpg') no-repeat center center / cover;
+  z-index: -1;
+}
+
+/* NAVIGATION */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--btn-bg);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  min-height: calc(100vh - 80px);
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: var(--btn-bg);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.hero-description {
+  max-width: 600px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* ================= WHAT WE DO SECTION ================= */
+.what-we-do {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px; /* ensures cards don't touch edges */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 60px; /* space between intro and cards */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: flex;
+  justify-content: space-between; /* 4 cards evenly spaced */
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px; /* space between cards */
+}
+
+.card {
+  flex: 1 1 calc(25% - 30px); /* 4 cards per row with gap */
+  max-width: 250px;
+  background: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card i {
+  font-size: 3rem;
+  color: #ff6565;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    flex: none;
+    width: 80%;
+    max-width: 350px;
+  }
+}

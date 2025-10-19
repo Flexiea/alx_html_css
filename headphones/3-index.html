@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones</title>
+  <!-- EMMBEDDED FONT ICON -->
+<style>
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-ic_sound:before { content: "\e90e"; }
+.holberton_school-icon-ic_video:before { content: "\e910"; }
+.holberton_school-icon-ic_music:before { content: "\e909"; }
+.holberton_school-icon-ic_hearing:before { content: "\e90d"; }
+</style>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="3-styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo Area -->
+      <div class="logo-area">
+        <img src="images/favicon.png" alt="Headphones logo" class="logo-img">
+        <h1 class="logo-text">HEADPHONES</h1>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Our results</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#" class="cta-button">CALL TO ACTION</a>
+      <p class="hero-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+  </header>
+
+                <!-- WHAT WE DO SECTION -->
+<main>
+  <section class="what-we-do" aria-labelledby="whatwedo-heading">
+    <div class="container">
+      <h2 id="whatwedo-heading" class="section-title">What we do…</h2>
+      <p class="intro-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros non justo 
+        vestibulum aliquet. Integer vehicula, risus vel facilisis tincidunt, arcu sapien.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <i class="holberton_school-icon-ic_sound"></i>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <i class="holberton_school-icon-ic_video"></i>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <i class="holberton_school-icon-ic_hearing"></i>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <i class="holberton_school-icon-ic_music"></i>
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  
+<!-- Our Results Section -->
+  <section id="our-results" class="our-results">
+    <div class="container">
+      <h2 class="section-title">Our Results</h2>
+      <p class="intro-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="pentagon">
+            <span class="pentagon-text">+2%<br>Lorem ipsum dolor</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="pentagon">
+            <span class="pentagon-text">+2%<br>Lorem ipsum dolor</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="pentagon">
+            <span class="pentagon-text">+2%<br>Lorem ipsum dolor</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="pentagon">
+            <span class="pentagon-text">+2%<br>Lorem ipsum dolor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACT US SECTION -->
+<section class="contact-us" aria-labelledby="contact-heading">
+  <div class="container">
+    <h2 id="contact-heading" class="section-title">Contact us</h2>
+
+    <form class="contact-form" action="#" method="GET">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-cta">CALL TO ACTION</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
